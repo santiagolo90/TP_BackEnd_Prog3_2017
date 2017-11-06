@@ -1,0 +1,5 @@
+INSERT INTO `empleado`(`nombre`, `sexo`, `email`, `clave`, `turno`, `perfil`) VALUES 
+("Jefe","masculino","admin@estacionar.com","admin123","mañana","administrador"),
+("Empleado01","masculino","emp01@estacionar.com","emp123","mañana","usuario"),
+("Empleado02","femenino","emp02@estacionar.com","emp456","tarde","usuario"),
+("Empleado03","masculino","emp03@estacionar.com","emp789","noche","usuario")
