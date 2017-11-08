@@ -13,39 +13,38 @@ class vehiculo
         $this->_patente = $patente;
         $this->_color = $color;
         $this->_marca = $marca;
-        $this->_fechaIng = date("Y-m-d H:i:s");
+        //$this->_fechaIng = date("Y-m-d H:i:s");
         }
         
     }
 
-    public function GuardarVehiculo()
+    public function InsertarVehiculoParametros()
 	{
             $ahora = date("Y-m-d H:i:s");
 			$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso();
-            $cadenaConsulta = "INSERT into estacionados (patente,color,marca,fecha_hora_ing)values('".$_POST["patente"]."','".$_POST["color"]."','".$_POST["marca"]."','".$ahora."')";
-			$consulta =$objetoAccesoDato->RetornarConsulta($cadenaConsulta);
+            //$cadenaConsulta = "INSERT into estacionados (patente,color,marca,fecha_hora_ing)values('".$_POST["patente"]."','".$_POST["color"]."','".$_POST["marca"]."','".$ahora."')";
+            $consulta =$objetoAccesoDato->RetornarConsulta("INSERT into estacionados (patente,color,marca,fecha_hora_ing)values(:patente,:color,:marca,:ahora)");
+            //$consulta =$objetoAccesoDato->RetornarConsulta($cadenaConsulta);
+            $consulta->bindValue(':patente',$this->_patente, PDO::PARAM_STR);
+            $consulta->bindValue(':color', $this->_color, PDO::PARAM_STR);
+            $consulta->bindValue(':marca', $this->_marca, PDO::PARAM_STR);
+           $consulta->bindValue(':ahora', $ahora, PDO::PARAM_STR);
+            //$consulta->bindValue(array(":ahora"=>date("Y-m-d H:i:s", strtotime($date)), PDO::PARAM_STR));
 			$consulta->execute();	
 			return $consulta->fetchAll(PDO::FETCH_CLASS, "vehiculo");	
     }
 
-    public  function BorrarVehiculo($request, $response, $args)
-	{
-        $ArrayDeParametros = $request->getParsedBody();
-        $pat=$ArrayDeParametros['patente'];
 
+    public  function BorrarVehiculoPatente()
+	{
  		$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-		$consulta =$objetoAccesoDato->RetornarConsulta('DELETE FROM estacionados WHERE patente=:patente');	
-			$consulta->bindValue(':patente',$pat, PDO::PARAM_STR);		
+		$consulta =$objetoAccesoDato->RetornarConsulta("
+			delete 
+			from estacionados			
+			WHERE patente=:patente");	
+			$consulta->bindValue(':patente',$this->_patente, PDO::PARAM_STR);		
 			$consulta->execute();
-            if($consulta->rowCount())
-            {
-                print("algo borro!!!");
-            }
-            else
-            {
-                print("no Borro nada!!!");
-            }
-            
+			return $consulta->rowCount();
 	}
 
 }

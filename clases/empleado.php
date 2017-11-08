@@ -26,36 +26,24 @@ class empleado
         
     }
 
-    public function GuardarEmpleado()
+    public function InsertarEmpleadoParametros()
 	{
 			$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso();
-            $cadenaConsulta = "INSERT into empleado (nombre,sexo,email,clave,turno,perfil)values('".$_POST["nombre"]."','".$_POST["sexo"]."','".$_POST["email"]."','".$_POST["clave"]."','".$_POST["turno"]."','".$_POST["perfil"]."')";
-			$consulta =$objetoAccesoDato->RetornarConsulta($cadenaConsulta);
-			$consulta->execute();	
+            //$cadenaConsulta = "INSERT into empleado (nombre,sexo,email,clave,turno,perfil)values('".$_POST["nombre"]."','".$_POST["sexo"]."','".$_POST["email"]."','".$_POST["clave"]."','".$_POST["turno"]."','".$_POST["perfil"]."')";
+            $consulta =$objetoAccesoDato->RetornarConsulta("INSERT into empleado (nombre,sexo,email,clave,turno,perfil)values(:nombre,:sexo,:email,:clave,:turno,:perfil)");
+            //$consulta =$objetoAccesoDato->RetornarConsulta($cadenaConsulta);
+            $consulta->bindValue(':nombre',$this->_nombre, PDO::PARAM_STR);
+            $consulta->bindValue(':sexo', $this->_sexo, PDO::PARAM_STR);
+            $consulta->bindValue(':email', $this->_email, PDO::PARAM_STR);
+            $consulta->bindValue(':clave', $this->_clave, PDO::PARAM_STR);
+            $consulta->bindValue(':turno', $this->_turno, PDO::PARAM_STR);
+            $consulta->bindValue(':perfil', $this->_perfil, PDO::PARAM_STR);
+            $consulta->execute();	
+            //return $objetoAccesoDato->RetornarUltimoIdInsertado();
 			return $consulta->fetchAll(PDO::FETCH_CLASS, "empleado");	
     }
 
-    public function BorrarUno($request, $response, $args) {
-        $ArrayDeParametros = $request->getParsedBody();
-        $id=$ArrayDeParametros['id'];
-        $empleado= new empleado();
-        $empleado->_id=$id;
-        $cantidadDeBorrados=$empleado->BorrarEmpleado();
-
-        $objDelaRespuesta= new stdclass();
-       $objDelaRespuesta->cantidad=$cantidadDeBorrados;
-       if($cantidadDeBorrados>0)
-           {
-                $objDelaRespuesta->resultado="algo borro!!!";
-           }
-           else
-           {
-               $objDelaRespuesta->resultado="no Borro nada!!!";
-           }
-       $newResponse = $response->withJson($objDelaRespuesta, 200);  
-         return $newResponse;
-   }
-    
+   
     public  function BorrarEmpleado()
 	{
  		$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 

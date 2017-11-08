@@ -50,7 +50,9 @@
         require 'clases/AccesoDatos.php';
         require 'clases/estacionamiento.php';
         require 'clases/empleado.php';
+        require 'clases/empleadoApi.php';
         require 'clases/vehiculo.php';
+        require 'clases/vehiculoApi.php';
 //require '/clases/MWparaCORS.php';
         require 'clases/MWparaAutentificar.php';
 
@@ -72,18 +74,19 @@ desarrollo para obtener información sobre los errores
         $app = new \Slim\App(["settings" => $config]);
 
         $app->get('[/]', function (Request $request, Response $response) {
-                  $response->getBody()->write("GET => Bienvenido!!! ,a SlimFramework");
+                  $response->getBody()->write("Bienvenido '$_GET[email]'!!! ,a SlimFramework");
                   return $response;
         });
 
         $app->group('/alta', function () {
   
-              $this->post('/usuario[/]', \empleado::class . ':GuardarEmpleado');
-              $this->post('/vehiculo[/]', \vehiculo::class . ':GuardarVehiculo');
+              $this->post('/empleado[/]', \empleadoApi::class . ':CargarUno');
+              $this->post('/vehiculo[/]', \vehiculoApi::class . ':CargarUno');
         });
         $app->group('/baja', function () {
-                $this->delete('/usuario[/]', \empleado::class . ':BorrarUno');
-                $this->delete('/vehiculo[/]', \vehiculo::class . ':BorrarVehiculo');
+          //x-www-form-urlencoded
+                $this->delete('/empleado[/]', \empleadoApi::class . ':BorrarUno');
+                $this->delete('/vehiculo[/]', \vehiculoApi::class . ':BorrarUno');
         });
 
 /*LLAMADA A METODOS DE INSTANCIA DE UNA CLASE*/
