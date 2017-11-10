@@ -53,6 +53,8 @@
         require 'clases/empleadoApi.php';
         require 'clases/vehiculo.php';
         require 'clases/vehiculoApi.php';
+        require 'clases/login.php';
+        require 'clases/loginApi.php';
 //require '/clases/MWparaCORS.php';
         require 'clases/MWparaAutentificar.php';
 
@@ -72,7 +74,6 @@ desarrollo para obtener información sobre los errores
 */
 
         $app = new \Slim\App(["settings" => $config]);
-
         $app->get('[/]', function (Request $request, Response $response) {
                   $response->getBody()->write("Bienvenido '$_GET[email]'!!! ,a SlimFramework");
                   return $response;
@@ -92,7 +93,7 @@ desarrollo para obtener información sobre los errores
 /*LLAMADA A METODOS DE INSTANCIA DE UNA CLASE*/
         $app->group('/login', function () {
 
-            $this->get('/', \estacionamiento::class . ':TraerEmpleado');
+            $this->get('[/]', \loginApi::class . ':VerificarLoginApi');
                  /*
                   $this->get('/', \cdApi::class . ':traerTodos')->add(\MWparaCORS::class . ':HabilitarCORSTodos');
  

@@ -54,6 +54,23 @@ class empleado
 			$consulta->bindValue(':id',$this->_id, PDO::PARAM_INT);		
 			$consulta->execute();
 			return $consulta->rowCount();
+    }
+    
+    public static function TraerTodoLosEmpleados()
+	{
+			$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+			$consulta =$objetoAccesoDato->RetornarConsulta("select nombre,email,turno,perfil from empleado");
+			$consulta->execute();			
+			return $consulta->fetchAll(PDO::FETCH_CLASS, "empleado");		
+    }
+
+    public static function TraerEmpleadoEmail($email) 
+	{
+			$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+			$consulta =$objetoAccesoDato->RetornarConsulta("select nombre,sexo,email,clave,turno,perfil from empleado where email = '$email'");
+			$consulta->execute();
+			$EmpAux= $consulta->fetchObject('empleado');
+			return $EmpAux;		
 	}
 }
 
