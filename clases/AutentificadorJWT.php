@@ -11,21 +11,24 @@ class AutentificadorJWT
     
     public static function CrearToken($datos)
     {
-        $ahora = time();
+        //var_dump($datos);
+        //$ahora = time();
         /*
          parametros del payload
          https://tools.ietf.org/html/rfc7519#section-4.1
          + los que quieras ej="'app'=> "API REST CD 2017" 
         */
+        
         $payload = array(
-        	'iat'=>$ahora,
-            'exp' => $ahora + (20),
+        	//'iat'=>$ahora,
+            //'exp' => $ahora + (20),
             'aud' => self::Aud(),
             'data' => $datos,
-            'app'=> "API REST CD 2017"
+            'app'=> "API REST TP-Estacionamiento"
         );
      
         return JWT::encode($payload, self::$claveSecreta);
+        
     }
     
     public static function VerificarToken($token)

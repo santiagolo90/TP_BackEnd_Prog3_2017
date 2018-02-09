@@ -8,11 +8,11 @@ $(function(){
 
 function manejadorAdmin() {
     $("#email").val("admin@estacionar.com");
-    $("#pwd").val("admin123");  
+    $("#clave").val("admin123");  
 }
 
 function manejadorUser() { 
     $("#email").val("emp01@estacionar.com");
-    $("#pwd").val("emp123"); 
+    $("#clave").val("emp123"); 
 }
 

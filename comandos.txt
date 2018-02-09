@@ -3,3 +3,35 @@ INSERT INTO `empleado`(`nombre`, `sexo`, `email`, `clave`, `turno`, `perfil`) VA
 ("Empleado01","masculino","emp01@estacionar.com","emp123","mañana","usuario"),
 ("Empleado02","femenino","emp02@estacionar.com","emp456","tarde","usuario"),
 ("Empleado03","masculino","emp03@estacionar.com","emp789","noche","usuario")
+
+//SELECT DISTINCT * FROM cocheras WHERE `estado`='libre'
+//select * from cocheras LIMIT 1
+//SELECT * FROM cocheras WHERE `estado`='libre' LIMIT 1
+//SELECT * FROM cocheras WHERE `estado`='libre' AND `tipo`='normal' LIMIT 1
+SELECT (Count(`idEmpleadoIngreso`))+(Count(`idEmpleadoSalida`)) AS cantidadOperaciones FROM estacionados WHERE `idEmpleadoIngreso`=23
+
+pass de DB en 000 estacionamiento 
+user santiagolo90
+
+select idCochera, count(*) cant from estacionados group by idCochera order by cant desc LIMIT 1
+select idCochera, count(*) cant from estacionados group by idCochera HAVING COUNT(cant)>0 ORDER by cant DESC
+
+nunca usados
+SELECT `id` FROM `cocheras` WHERE `id` NOT IN (select idCochera from estacionados)
+SELECT * FROM `cocheras` WHERE id NOT in (select idCochera from estacionados)
+
+SELECT `fecha`,`hora` FROM `historialEmpleado` WHERE `idEmpleado`=1 AND fecha BETWEEN '2018-01-31' AND '2018-01-31' 
+
+// mas usado
+SELECT idCochera, count(*) cant  FROM estacionados WHERE fechaHoraIngreso AND fechaHoraSalida BETWEEN '2018-01-25' AND '2018-01-25' group by idCochera ORDER BY cant desc
+//Uso de cocheras especiales
+SELECT count(*) cantidad FROM estacionados WHERE `fechaHoraIngreso`>='2018-01-01 00:00:00' AND `idCochera` in (SELECT id FROM `cocheras` where tipo='especial')
+//Cantidad de patentes sin repetir
+SELECT COUNT(DISTINCT(patente)) as cant FROM estacionados WHERE `fechaHoraIngreso` >=:desde
+//Cantidad de veces que ingresa una patente
+SELECT COUNT(*) as cantVisita FROM estacionados WHERE `patente`='abc12333' and `fechaHoraIngreso` <= '2018-02-05 00:00:00'
+//Promedios
+SELECT SUM(`importe`) as suma , COUNT(*) as cant FROM `estacionados` WHERE MONTH(`fechaHoraSalida`) = 1
+SELECT AVG(`importe`) as suma FROM `estacionados` WHERE MONTH(`fechaHoraSalida`) = 2
+
+

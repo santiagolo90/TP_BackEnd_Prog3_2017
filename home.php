@@ -93,7 +93,8 @@ desarrollo para obtener información sobre los errores
 /*LLAMADA A METODOS DE INSTANCIA DE UNA CLASE*/
         $app->group('/login', function () {
 
-            $this->get('[/]', \loginApi::class . ':VerificarLoginApi');
+            $this->post('[/]', \loginApi::class . ':VerificarLoginApi');
+            $this->post('/test', \loginApi::class . ':pruebaToken');
                  /*
                   $this->get('/', \cdApi::class . ':traerTodos')->add(\MWparaCORS::class . ':HabilitarCORSTodos');
  
