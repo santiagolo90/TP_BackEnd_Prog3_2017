@@ -16,7 +16,17 @@ class loginApi
         {
             $email = $ArrayDeParametros['email'];
             $clave = $ArrayDeParametros['clave'];
-            $usuarioBuscado = empleado::TraerEmpleadoEmailClave($email,$clave);
+            
+            $empAux = empleado::TraerEmpleadoEmail($email);
+            $claveValida = password_verify($clave, $empAux->clave);
+            if ($claveValida) {
+
+                $usuarioBuscado = empleado::TraerEmpleadoEmail($email);
+            }
+            else {
+                 $usuarioBuscado = false;
+                 $empAux =false;
+            }
             //var_dump($usuarioBuscado);
             $objRespuesta = new stdClass();
             //$objRespuesta->Datos= null;
@@ -64,4 +74,18 @@ class loginApi
             return $response->withJson("Falta email y clave");
         }
     }
+
+    public function datosToken($request, $response, $args) {
+        $arrayConToken = $request->getHeader('token');
+        $token=$arrayConToken[0];
+        try{
+			$datosToken = AutentificadorJWT::ObtenerData($token);
+		}
+		catch(Exception $e){
+			return $response->withJson($e->getMessage(), 511);
+		}
+		return $response->withJson( $datosToken ,200);
+
+    }
+
 }

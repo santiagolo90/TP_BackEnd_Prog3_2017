@@ -27,7 +27,7 @@ class MWparaCORS
    		 return $response
             ->withHeader('Access-Control-Allow-Origin', '*')
             ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
-            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST');
 	}
 
 	/**
@@ -52,7 +52,7 @@ class MWparaCORS
 		 $response = $next($request, $response);
 		// $response->getBody()->write('<p>habilitado HabilitarCORS8080</p>');
    		 return $response
-            ->withHeader('Access-Control-Allow-Origin', 'https://santiagolo90.000webhostapp.com:8080')
+            ->withHeader('Access-Control-Allow-Origin', 'http://localhost:8080')
             ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
             ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
 	}
@@ -79,7 +79,7 @@ class MWparaCORS
 		 $response = $next($request, $response);
 		 //$response->getBody()->write('<p>habilitado HabilitarCORS4200</p>');
    		 return $response
-            ->withHeader('Access-Control-Allow-Origin', 'https://santiagolo90.000webhostapp.com:4200')
+            ->withHeader('Access-Control-Allow-Origin', 'https://localhost:4200')
             ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
             ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
 	}

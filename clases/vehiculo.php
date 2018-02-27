@@ -2,6 +2,7 @@
 include_once "AccesoDatos.php";
 class vehiculo
 {
+    public $id;
     public $patente;
     public $color;
     public $marca;
@@ -41,7 +42,6 @@ class vehiculo
 			return $vehiculoAux;		
     }
 
-
     public static function ExisteVehiculo($patenteAux) 
 	{
         //devuelve null si el idEmpleadoSalida no existe
@@ -57,6 +57,27 @@ class vehiculo
         $consulta->execute();
         return $consulta->fetchAll(PDO::FETCH_CLASS, "vehiculo");
     }
+    public static function estaEstacionado($patente)
+    {
+        $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso();
+        $consulta =$objetoAccesoDato->RetornarConsulta("SELECT COUNT(*) as cant FROM estacionados WHERE patente = '$patente' AND fechaHoraSalida is NULL");
+        $consulta->execute();
+        if($consulta->rowCount() == 0){
+            return false;   
+        }
+        return $consulta->fetchAll();
+    }
+    public static function listaEstacionado()
+    {
+        $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso();
+        $consulta =$objetoAccesoDato->RetornarConsulta("SELECT id,patente,marca,color,idEmpleadoIngreso as empleado,idCochera as cochera,fechaHoraIngreso,foto FROM `estacionados` WHERE fechaHoraSalida is NULL");
+        $consulta->execute();
+        $vehiculoAux = $consulta->fetchAll(PDO::FETCH_CLASS);
+        if($consulta->rowCount() == 0){
+            return false;   
+        }
+        return $vehiculoAux;
+    }
     
     public static function RegistarSaludaVehiculo($patenteAux,$auxEmpID,$FHSalidaAux,$tiempoAux,$importeAux)
     {
@@ -71,8 +92,6 @@ class vehiculo
 
     }
 
-
-
     public  function BorrarVehiculoPatente()
 	{
  		$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
@@ -84,12 +103,43 @@ class vehiculo
 			$consulta->execute();
 			return $consulta->rowCount();
     }
+
+    //Modificar
+    public function ModificarVehiculoPatente($id)
+    {
+        $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso();
+
+        $consulta =$objetoAccesoDato->RetornarConsulta("UPDATE estacionados set foto=:foto WHERE id=$id");
+            //$consulta->bindValue(':id', $this->id, PDO::PARAM_INT);
+            //$consulta->bindValue(':patente', $this->patente, PDO::PARAM_STR);
+            //$consulta->bindValue(':color', $this->color, PDO::PARAM_STR);
+            //$consulta->bindValue(':marca', $this->marca, PDO::PARAM_STR);
+            $consulta->bindValue(':foto', $this->foto, PDO::PARAM_STR);
+            //$consulta->bindValue(':idEmpleadoIngreso', $this->idEmpleadoIngreso, PDO::PARAM_STR);
+            //$consulta->bindValue(':idCochera', $this->idCochera, PDO::PARAM_STR);
+            $consulta->execute();
+            return $consulta->rowCount();
+    }
     
     //Trae todos los movimientos por patente
     public static function TraerEstacionadosPatente($patenteAux) 
 	{
         $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-        $consulta =$objetoAccesoDato->RetornarConsulta("SELECT idCochera,fechaHoraIngreso,fechaHoraSalida,importe from estacionados where patente = '$patenteAux'");
+        $consulta =$objetoAccesoDato->RetornarConsulta("SELECT patente,idCochera,fechaHoraIngreso,fechaHoraSalida,importe from estacionados where patente = '$patenteAux'");
+        $consulta->execute();
+        $vehiculoAux = $consulta->fetchAll(PDO::FETCH_CLASS);
+        if($consulta->rowCount() == 0){
+            return false;   
+        }
+        return $vehiculoAux;		
+	
+    }
+
+    public static function TraerEstacionadosTodos() 
+	{
+        $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+        //$consulta =$objetoAccesoDato->RetornarConsulta("SELECT idCochera,fechaHoraIngreso,fechaHoraSalida,importe from estacionados where fechaHoraSalida != 'NULL'");
+        $consulta =$objetoAccesoDato->RetornarConsulta("SELECT patente,idCochera,fechaHoraIngreso,fechaHoraSalida,importe from estacionados");
         $consulta->execute();
         $vehiculoAux = $consulta->fetchAll(PDO::FETCH_CLASS);
         if($consulta->rowCount() == 0){
@@ -307,6 +357,34 @@ class vehiculo
         $consulta = $objetoAccesoDatos->RetornarConsulta("SELECT AVG(importe) as prom,COUNT(*) as cant FROM estacionados WHERE MONTH(fechaHoraSalida)=:mes and patente=:patente");
         $consulta->bindValue(":mes", $mes, PDO::PARAM_STR); 
         $consulta->bindValue(":patente", $patenteAux, PDO::PARAM_STR);
+        $consulta->setFetchMode(PDO::FETCH_ASSOC);
+        $consulta->execute();
+        if($consulta->rowCount() == 0){
+            return false;   
+        }
+        return $consulta->fetchAll();
+    }
+
+    public static function TraePromedioCocheraMes($mes,$idCocheraAux)
+    {
+        $objetoAccesoDatos = AccesoDatos::dameUnObjetoAcceso();
+        $consulta = $objetoAccesoDatos->RetornarConsulta("SELECT AVG(importe) as prom,COUNT(*) as cant FROM estacionados WHERE MONTH(fechaHoraSalida)=:mes and idCochera=:idCochera");
+        $consulta->bindValue(":mes", $mes, PDO::PARAM_STR); 
+        $consulta->bindValue(":idCochera", $idCocheraAux, PDO::PARAM_STR);
+        $consulta->setFetchMode(PDO::FETCH_ASSOC);
+        $consulta->execute();
+        if($consulta->rowCount() == 0){
+            return false;   
+        }
+        return $consulta->fetchAll();
+    }
+
+    public static function TraePromedioUsuarioMes($mes,$idUsuarioAux)
+    {
+        $objetoAccesoDatos = AccesoDatos::dameUnObjetoAcceso();
+        $consulta = $objetoAccesoDatos->RetornarConsulta("SELECT AVG(importe) as prom,COUNT(*) as cant FROM estacionados WHERE MONTH(fechaHoraSalida)=:mes and idEmpleadoSalida=:idEmpleadoSalida");
+        $consulta->bindValue(":mes", $mes, PDO::PARAM_STR); 
+        $consulta->bindValue(":idEmpleadoSalida", $idUsuarioAux, PDO::PARAM_STR);
         $consulta->setFetchMode(PDO::FETCH_ASSOC);
         $consulta->execute();
         if($consulta->rowCount() == 0){

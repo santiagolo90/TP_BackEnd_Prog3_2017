@@ -1,0 +1,1255 @@
+{
+	"info": {
+		"name": "TpEstacionamiento copy",
+		"_postman_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "empleado",
+			"item": [
+				{
+					"name": "https://santiagolo90.000webhostapp.com/Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@admin.com",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "abc123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/Login",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/alta",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "mario",
+									"type": "text"
+								},
+								{
+									"key": "sexo",
+									"value": "masculino",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mario@user.com",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "abc123",
+									"type": "text"
+								},
+								{
+									"key": "turno",
+									"value": "noche",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "activo",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file"
+								},
+								{
+									"key": "perfil",
+									"value": "USER",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/empleado/alta",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"alta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/foto/verImagen/santiago@user.com",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/foto/verImagen/santiago@user.com",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"foto",
+								"verImagen",
+								"santiago@user.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/suspender",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "43",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/empleado/suspender",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"suspender"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/suspendido",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/empleado/suspendido",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"suspendido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/activar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "43",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/empleado/activar",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"activar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/borrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "44",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/empleado/borrar",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"borrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/foto/vaciarPapelera",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/foto/vaciarPapelera",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"foto",
+								"vaciarPapelera"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/modificar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "43",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "SANTIAGO",
+									"type": "text"
+								},
+								{
+									"key": "sexo",
+									"value": "MASCULINO",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "SANTIAGO@USER.COM",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "abc123",
+									"type": "text"
+								},
+								{
+									"key": "turno",
+									"value": "NOCHE",
+									"type": "text"
+								},
+								{
+									"key": "perfil",
+									"value": "ADMIN",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "ACTIVO",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/empleado/modificar",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"modificar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/cantidadOperaciones/admin@admin.com",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "desde",
+									"value": "2018-01-29 00:00:00",
+									"type": "text"
+								},
+								{
+									"key": "hasta",
+									"value": "2018-01-25 14:43:29",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/empleado/cantidadOperaciones/admin@admin.com",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"cantidadOperaciones",
+								"admin@admin.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/historicoLogin/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "desde",
+									"value": "2018-02-10 00:00:00",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "hasta",
+									"value": "2018-02-30 14:43:29",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/empleado/historicoLogin/",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"historicoLogin",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cochera",
+			"description": "",
+			"item": [
+				{
+					"name": "https://santiagolo90.000webhostapp.com/cochera/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/cochera/",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"cochera",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/cochera/alta",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "piso",
+									"value": "4",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "43",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "a",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "ESPECIAL",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/cochera/alta",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"cochera",
+								"alta"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/cochera/borrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "numero",
+									"value": "41",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/cochera/borrar",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"cochera",
+								"borrar"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/cochera/modificar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "18",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "piso",
+									"value": "3",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "35",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "OCUPADA",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "NORMAL",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/cochera/modificar",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"cochera",
+								"modificar"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/cochera/masUtilizadaFecha",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "desde",
+									"value": "2018-01-29 00:00:00\n",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "hasta",
+									"value": "2018-01-29 23:59:59\n",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/cochera/masUtilizadaFecha",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"cochera",
+								"masUtilizadaFecha"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/cochera/menosUtilizadaFecha",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "desde",
+									"value": "2018-01-29 00:00:00\n",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "hasta",
+									"value": "2018-01-29 23:59:59\n",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/cochera/menosUtilizadaFecha",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"cochera",
+								"menosUtilizadaFecha"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/cochera/nuncaUtilizadaFecha",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "desde",
+									"value": "2018-01-29 00:00:00\n",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hasta",
+									"value": "2018-01-29 23:59:59\n",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/cochera/nuncaUtilizadaFecha",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"cochera",
+								"nuncaUtilizadaFecha"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "estacionamiento",
+			"description": "",
+			"item": [
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/suspendido",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/foto/verImagenAuto/bbb111",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"foto",
+								"verImagenAuto",
+								"bbb111"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/estacionamiento/ingresar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6NDMsIm5vbWJyZSI6InNhbnRpYWdvIiwic2V4byI6Im1hc2N1bGlubyIsImVtYWlsIjoic2FudGlhZ29AdXNlci5jb20iLCJ0dXJubyI6Im5vY2hlIiwicGVyZmlsIjoidXNlciIsImFsdGEiOiIyMDE4LTAyLTE5IDE5OjA0OjU3IiwiZXN0YWRvIjoiYWN0aXZvIn0sImFwcCI6IkFQSSBSRVNUIFRQLUVzdGFjaW9uYW1pZW50byJ9.AI9RfN0ZAnyOSStBkpYN8fEi57JMCWk7A3lDNQLm93k"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patente",
+									"value": "ccc333",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "verde",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "marca",
+									"value": "ford",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "especial",
+									"value": "SI",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"value": "",
+									"description": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/estacionamiento/ingresar",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"estacionamiento",
+								"ingresar"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/empleado/suspendido",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/foto/verImagenAuto/ccc333",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"foto",
+								"verImagenAuto",
+								"ccc333"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/estacionamiento/retirar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6NDMsIm5vbWJyZSI6InNhbnRpYWdvIiwic2V4byI6Im1hc2N1bGlubyIsImVtYWlsIjoic2FudGlhZ29AdXNlci5jb20iLCJ0dXJubyI6Im5vY2hlIiwicGVyZmlsIjoidXNlciIsImFsdGEiOiIyMDE4LTAyLTE5IDE5OjA0OjU3IiwiZXN0YWRvIjoiYWN0aXZvIn0sImFwcCI6IkFQSSBSRVNUIFRQLUVzdGFjaW9uYW1pZW50byJ9.AI9RfN0ZAnyOSStBkpYN8fEi57JMCWk7A3lDNQLm93k"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patente",
+									"value": "ccc333",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/estacionamiento/retirar",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"estacionamiento",
+								"retirar"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/estacionamiento/ubicarFecha",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patente",
+									"value": "aaa111",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hasta",
+									"value": "2018-02-19 00:00:00",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "desde",
+									"value": "2018-02-19 23:59:59",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/estacionamiento/ubicarFecha",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"estacionamiento",
+								"ubicarFecha"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/estacionamiento/usoTipoFechas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patente",
+									"value": "aaa111",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "desde",
+									"value": "2018-01-19 00:00:00",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hasta",
+									"value": "2018-02-20 23:59:59",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/estacionamiento/usoTipoFechas",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"estacionamiento",
+								"usoTipoFechas"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/estacionamiento/cantidadesPatentesTotal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patente",
+									"value": "aaa111",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "desde",
+									"value": "2018-01-19 00:00:00",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hasta",
+									"value": "2018-02-20 23:59:59",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/estacionamiento/cantidadesPatentesTotal",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"estacionamiento",
+								"cantidadesPatentesTotal"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/estacionamiento/cantidadIngresoPatente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "patente",
+									"value": "abc123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "hasta",
+									"value": "2018-01-19 00:00:00",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "desde",
+									"value": "2018-02-20 23:59:59",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/estacionamiento/cantidadIngresoPatente",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"estacionamiento",
+								"cantidadIngresoPatente"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/estacionamiento/promedioImporte",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mes",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/estacionamiento/promedioImporte",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"estacionamiento",
+								"promedioImporte"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "https://santiagolo90.000webhostapp.com/estacionamiento/promedioPatente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mes",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "patente",
+									"value": "aaa111",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://santiagolo90.000webhostapp.com/estacionamiento/promedioPatente",
+							"protocol": "https",
+							"host": [
+								"santiagolo90",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"estacionamiento",
+								"promedioPatente"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

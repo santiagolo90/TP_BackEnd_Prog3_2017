@@ -22,9 +22,9 @@ class AutentificadorJWT
         $payload = array(
         	//'iat'=>$ahora,
             //'exp' => $ahora + (20),
-            'aud' => self::Aud(),
+            //'aud' => self::Aud(),
             'data' => $datos,
-            'app'=> "API REST TP-Estacionamiento"
+            //'app'=> "API REST TP-Estacionamiento"
         );
      
         return JWT::encode($payload, self::$claveSecreta);

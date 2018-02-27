@@ -56,7 +56,10 @@ class empleado
 			$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
 			$consulta =$objetoAccesoDato->RetornarConsulta("select id,nombre,sexo,email,clave,turno,perfil,foto,alta,estado from empleado where email = '$email'");
 			$consulta->execute();
-			$EmpAux= $consulta->fetchObject('empleado');
+            $EmpAux= $consulta->fetchObject('empleado');
+            if($consulta->rowCount() == 0){
+                return false;   
+            }
 			return $EmpAux;		
     }
 

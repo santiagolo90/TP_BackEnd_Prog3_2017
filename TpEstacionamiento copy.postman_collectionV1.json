@@ -1,0 +1,1285 @@
+{
+	"id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+	"name": "TpEstacionamiento copy",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "cochera",
+			"description": "",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"order": [
+				"cd5b4fb1-a65c-fcb9-dfbc-3345a37ec015",
+				"b6828557-ffbf-6d76-1127-dc70bdb61326",
+				"c8b40b41-e77d-47b4-2e91-c206f8218445",
+				"0971aadc-3c20-e0a4-8f54-6c256b7f2a7f",
+				"09de35f7-b917-0130-f324-11c16923726a",
+				"3f680aa2-fff2-253b-e824-dcfcfa0cfb49",
+				"6fed94fa-c5d5-7b91-6afb-94c591098ecf"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"auth": null,
+			"id": "643736ca-7996-f850-6528-218b38fbd6b0"
+		},
+		{
+			"id": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"name": "empleado",
+			"order": [
+				"51b11de0-f9e0-3e38-c914-5067d48f8e95",
+				"7adfb616-9f13-f9da-7778-4e82004b0c87",
+				"ddffa89b-d1bd-0c4c-e705-8c636b3c806b",
+				"eac40269-b90f-67c3-7a5a-97ad4de6a292",
+				"6ce37942-bcf9-5ecb-f094-dc534402c365",
+				"37f37bdf-d703-1d63-8c50-f915c8eb7bfc",
+				"eb9f5db5-3e23-bd57-2d44-0ba0568941b1",
+				"9378a28f-9729-91fc-ad25-3e3b077ba6d6",
+				"f26539fc-70e6-f40f-5859-510012f63444",
+				"46103161-4f30-f2c6-c597-a21aced23c76",
+				"4c3d2cf8-4437-d5c5-ee8f-5fc2281683f0"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3"
+		},
+		{
+			"name": "estacionamiento",
+			"description": "",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"order": [
+				"682cacf1-d439-b132-3c54-c2be39d31b7d",
+				"a7ad40c3-ff94-8fbd-7bcc-f34ebc6c76b4",
+				"6197f9f0-6a54-0a2b-ae7d-20abd4852871",
+				"0fc5123e-f37e-4247-5e37-4705d68ec076",
+				"adfb49a6-d198-edb7-5b36-0b42df0f1613",
+				"9fcca563-9342-880e-bb57-9f6d08f6e5ea",
+				"4c405ac9-7b81-f2e2-1488-f1d74b837ab3",
+				"3c31272c-0d5f-cc5c-e837-29942009f986",
+				"b66ad4d1-8a73-d23d-c0f6-434a9a176ffb",
+				"36bfaeaf-c8ae-7d72-8e1a-62b3306aecbd"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"auth": null,
+			"id": "675a1f92-0a19-7232-3b11-56b17505e607"
+		}
+	],
+	"folders_order": [
+		"a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+		"643736ca-7996-f850-6528-218b38fbd6b0",
+		"675a1f92-0a19-7232-3b11-56b17505e607"
+	],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "0971aadc-3c20-e0a4-8f54-6c256b7f2a7f",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/cochera/modificar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "id",
+					"value": "18",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "piso",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "numero",
+					"value": "35",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "estado",
+					"value": "OCUPADA",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tipo",
+					"value": "NORMAL",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/cochera/modificar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519133938251,
+			"version": 2,
+			"responses": [],
+			"folder": "643736ca-7996-f850-6528-218b38fbd6b0",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "09de35f7-b917-0130-f324-11c16923726a",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/cochera/masUtilizadaFecha",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "desde",
+					"value": "2018-01-29 00:00:00\n",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "hasta",
+					"value": "2018-01-29 23:59:59\n",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/cochera/masUtilizadaFecha",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519135385007,
+			"version": 2,
+			"responses": [],
+			"folder": "643736ca-7996-f850-6528-218b38fbd6b0",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "0fc5123e-f37e-4247-5e37-4705d68ec076",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6NDMsIm5vbWJyZSI6InNhbnRpYWdvIiwic2V4byI6Im1hc2N1bGlubyIsImVtYWlsIjoic2FudGlhZ29AdXNlci5jb20iLCJ0dXJubyI6Im5vY2hlIiwicGVyZmlsIjoidXNlciIsImFsdGEiOiIyMDE4LTAyLTE5IDE5OjA0OjU3IiwiZXN0YWRvIjoiYWN0aXZvIn0sImFwcCI6IkFQSSBSRVNUIFRQLUVzdGFjaW9uYW1pZW50byJ9.AI9RfN0ZAnyOSStBkpYN8fEi57JMCWk7A3lDNQLm93k\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6NDMsIm5vbWJyZSI6InNhbnRpYWdvIiwic2V4byI6Im1hc2N1bGlubyIsImVtYWlsIjoic2FudGlhZ29AdXNlci5jb20iLCJ0dXJubyI6Im5vY2hlIiwicGVyZmlsIjoidXNlciIsImFsdGEiOiIyMDE4LTAyLTE5IDE5OjA0OjU3IiwiZXN0YWRvIjoiYWN0aXZvIn0sImFwcCI6IkFQSSBSRVNUIFRQLUVzdGFjaW9uYW1pZW50byJ9.AI9RfN0ZAnyOSStBkpYN8fEi57JMCWk7A3lDNQLm93k",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/estacionamiento/retirar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "patente",
+					"value": "ccc333",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/estacionamiento/retirar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519154391223,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "36bfaeaf-c8ae-7d72-8e1a-62b3306aecbd",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/estacionamiento/promedioPatente",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "mes",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "patente",
+					"value": "aaa111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/estacionamiento/promedioPatente",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519156376368,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "37f37bdf-d703-1d63-8c50-f915c8eb7bfc",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/activar",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "POST",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "id",
+					"value": "43",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/empleado/activar",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "3c31272c-0d5f-cc5c-e837-29942009f986",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/estacionamiento/cantidadIngresoPatente",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "patente",
+					"value": "abc123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hasta",
+					"value": "2018-01-19 00:00:00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "desde",
+					"value": "2018-02-20 23:59:59",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/estacionamiento/cantidadIngresoPatente",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519155868366,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "3f680aa2-fff2-253b-e824-dcfcfa0cfb49",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/cochera/menosUtilizadaFecha",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "desde",
+					"value": "2018-01-29 00:00:00\n",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "hasta",
+					"value": "2018-01-29 23:59:59\n",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/cochera/menosUtilizadaFecha",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519135848767,
+			"version": 2,
+			"responses": [],
+			"folder": "643736ca-7996-f850-6528-218b38fbd6b0",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "46103161-4f30-f2c6-c597-a21aced23c76",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/cantidadOperaciones/admin@admin.com",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "POST",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "desde",
+					"value": "2018-01-29 00:00:00",
+					"type": "text"
+				},
+				{
+					"key": "hasta",
+					"value": "2018-01-25 14:43:29",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/empleado/cantidadOperaciones/admin@admin.com",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "4c3d2cf8-4437-d5c5-ee8f-5fc2281683f0",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/historicoLogin/",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "POST",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "desde",
+					"value": "2018-02-10 00:00:00",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "hasta",
+					"value": "2018-02-30 14:43:29",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/empleado/historicoLogin/",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "4c405ac9-7b81-f2e2-1488-f1d74b837ab3",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/estacionamiento/cantidadesPatentesTotal",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "patente",
+					"value": "aaa111",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "desde",
+					"value": "2018-01-19 00:00:00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hasta",
+					"value": "2018-02-20 23:59:59",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/estacionamiento/cantidadesPatentesTotal",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519155577757,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "51b11de0-f9e0-3e38-c914-5067d48f8e95",
+			"name": "https://santiagolo90.000webhostapp.com/Login",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "email",
+					"value": "admin@admin.com",
+					"type": "text"
+				},
+				{
+					"key": "clave",
+					"value": "abc123",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/Login",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "6197f9f0-6a54-0a2b-ae7d-20abd4852871",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/foto/verImagenAuto/ccc333",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/suspendido",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519151960806,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": ""
+		},
+		{
+			"id": "682cacf1-d439-b132-3c54-c2be39d31b7d",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/foto/verImagenAuto/bbb111",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/suspendido",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519146592774,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": ""
+		},
+		{
+			"id": "6ce37942-bcf9-5ecb-f094-dc534402c365",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/suspendido",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "GET",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/empleado/suspendido",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "6fed94fa-c5d5-7b91-6afb-94c591098ecf",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/cochera/nuncaUtilizadaFecha",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "desde",
+					"value": "2018-01-29 00:00:00\n",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hasta",
+					"value": "2018-01-29 23:59:59\n",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/cochera/nuncaUtilizadaFecha",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519136647424,
+			"version": 2,
+			"responses": [],
+			"folder": "643736ca-7996-f850-6528-218b38fbd6b0",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "7adfb616-9f13-f9da-7778-4e82004b0c87",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/alta",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "POST",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "mario",
+					"type": "text"
+				},
+				{
+					"key": "sexo",
+					"value": "masculino",
+					"type": "text"
+				},
+				{
+					"key": "email",
+					"value": "mario@user.com",
+					"type": "text"
+				},
+				{
+					"key": "clave",
+					"value": "abc123",
+					"type": "text"
+				},
+				{
+					"key": "turno",
+					"value": "noche",
+					"type": "text"
+				},
+				{
+					"key": "estado",
+					"value": "activo",
+					"type": "text"
+				},
+				{
+					"key": "foto",
+					"type": "file"
+				},
+				{
+					"key": "perfil",
+					"value": "USER",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/empleado/alta",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "9378a28f-9729-91fc-ad25-3e3b077ba6d6",
+			"name": "https://santiagolo90.000webhostapp.com/foto/vaciarPapelera",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "GET",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs",
+			"data": [],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/foto/vaciarPapelera",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "9fcca563-9342-880e-bb57-9f6d08f6e5ea",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/estacionamiento/usoTipoFechas",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "patente",
+					"value": "aaa111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "desde",
+					"value": "2018-01-19 00:00:00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hasta",
+					"value": "2018-02-20 23:59:59",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/estacionamiento/usoTipoFechas",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519155325595,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "a7ad40c3-ff94-8fbd-7bcc-f34ebc6c76b4",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6NDMsIm5vbWJyZSI6InNhbnRpYWdvIiwic2V4byI6Im1hc2N1bGlubyIsImVtYWlsIjoic2FudGlhZ29AdXNlci5jb20iLCJ0dXJubyI6Im5vY2hlIiwicGVyZmlsIjoidXNlciIsImFsdGEiOiIyMDE4LTAyLTE5IDE5OjA0OjU3IiwiZXN0YWRvIjoiYWN0aXZvIn0sImFwcCI6IkFQSSBSRVNUIFRQLUVzdGFjaW9uYW1pZW50byJ9.AI9RfN0ZAnyOSStBkpYN8fEi57JMCWk7A3lDNQLm93k\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6NDMsIm5vbWJyZSI6InNhbnRpYWdvIiwic2V4byI6Im1hc2N1bGlubyIsImVtYWlsIjoic2FudGlhZ29AdXNlci5jb20iLCJ0dXJubyI6Im5vY2hlIiwicGVyZmlsIjoidXNlciIsImFsdGEiOiIyMDE4LTAyLTE5IDE5OjA0OjU3IiwiZXN0YWRvIjoiYWN0aXZvIn0sImFwcCI6IkFQSSBSRVNUIFRQLUVzdGFjaW9uYW1pZW50byJ9.AI9RfN0ZAnyOSStBkpYN8fEi57JMCWk7A3lDNQLm93k",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/estacionamiento/ingresar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "patente",
+					"value": "ccc333",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "color",
+					"value": "verde",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "marca",
+					"value": "ford",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "especial",
+					"value": "SI",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "foto",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/estacionamiento/ingresar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519151932993,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "adfb49a6-d198-edb7-5b36-0b42df0f1613",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/estacionamiento/ubicarFecha",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "patente",
+					"value": "aaa111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hasta",
+					"value": "2018-02-19 00:00:00",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "desde",
+					"value": "2018-02-19 23:59:59",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/estacionamiento/ubicarFecha",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519155038331,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "b66ad4d1-8a73-d23d-c0f6-434a9a176ffb",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/estacionamiento/promedioImporte",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "mes",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/estacionamiento/promedioImporte",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519156125699,
+			"version": 2,
+			"responses": [],
+			"folder": "675a1f92-0a19-7232-3b11-56b17505e607",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "b6828557-ffbf-6d76-1127-dc70bdb61326",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/cochera/alta",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "piso",
+					"value": "4",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "numero",
+					"value": "43",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "estado",
+					"value": "a",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tipo",
+					"value": "ESPECIAL",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/cochera/alta",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519133886800,
+			"version": 2,
+			"responses": [],
+			"folder": "643736ca-7996-f850-6528-218b38fbd6b0",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c8b40b41-e77d-47b4-2e91-c206f8218445",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/cochera/borrar",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "POST",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": [
+				{
+					"key": "numero",
+					"value": "41",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/cochera/borrar",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519133897613,
+			"version": 2,
+			"responses": [],
+			"folder": "643736ca-7996-f850-6528-218b38fbd6b0",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "cd5b4fb1-a65c-fcb9-dfbc-3345a37ec015",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M\n",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NGU4MTU4OWZjOWM5NTVjNTliMmM2ZDEyYWJlYjIzNzE5NjFhMTNmIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.XnGJOUQsiGXHLU_uDBjQLAtrDfNgaY8A6nvBIh1ty9M",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://santiagolo90.000webhostapp.com/cochera/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://santiagolo90.000webhostapp.com/cochera/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1519133876373,
+			"version": 2,
+			"responses": [],
+			"folder": "643736ca-7996-f850-6528-218b38fbd6b0",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "ddffa89b-d1bd-0c4c-e705-8c636b3c806b",
+			"name": "https://santiagolo90.000webhostapp.com/foto/verImagen/santiago@user.com",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "GET",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/foto/verImagen/santiago@user.com",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "eac40269-b90f-67c3-7a5a-97ad4de6a292",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/suspender",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "POST",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "id",
+					"value": "43",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/empleado/suspender",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxNTUwNGJiNWI3MDIwYmRjMTllNzRjOTViYmM3NmM2ZTM3Nzc5ZDRiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.Jwfg_6RwdjIBoWI9cDLnYXcW3cH_lzZ9f7cYm6Cf4u4"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "eb9f5db5-3e23-bd57-2d44-0ba0568941b1",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/borrar",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "POST",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "id",
+					"value": "44",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/empleado/borrar",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "f26539fc-70e6-f40f-5859-510012f63444",
+			"name": "https://santiagolo90.000webhostapp.com/empleado/modificar",
+			"collectionId": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"method": "POST",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs",
+			"dataMode": "params",
+			"data": [
+				{
+					"key": "id",
+					"value": "43",
+					"type": "text"
+				},
+				{
+					"key": "nombre",
+					"value": "SANTIAGO",
+					"type": "text"
+				},
+				{
+					"key": "sexo",
+					"value": "MASCULINO",
+					"type": "text"
+				},
+				{
+					"key": "email",
+					"value": "SANTIAGO@USER.COM",
+					"type": "text"
+				},
+				{
+					"key": "clave",
+					"value": "abc123",
+					"type": "text"
+				},
+				{
+					"key": "turno",
+					"value": "NOCHE",
+					"type": "text"
+				},
+				{
+					"key": "perfil",
+					"value": "ADMIN",
+					"type": "text"
+				},
+				{
+					"key": "estado",
+					"value": "ACTIVO",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "https://santiagolo90.000webhostapp.com/empleado/modificar",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "token",
+					"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZWIzMGFhNGVlNTE3MTZjOGYzMDhiYTcxMWE1MzA0ODliN2Q5ZTdiIiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoiYWRtaW5Vbm8iLCJzZXhvIjoibWFzY3VsaW5vIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0dXJubyI6Im1hbmlhbmEiLCJwZXJmaWwiOiJhZG1pbiIsImZvdG8iOiJmb3Rvc0VtcGxlYWRvc1wvYWRtaW5Vbm8ucG5nIiwiYWx0YSI6IjIwMTctMTItMTUgMTg6MDQ6MDQiLCJlc3RhZG8iOiJhY3Rpdm8ifSwiYXBwIjoiQVBJIFJFU1QgVFAtRXN0YWNpb25hbWllbnRvIn0.fPkyq2G3v4BJ84V1dlWtVGC2oIE3dxdKxpASakBGLbs"
+				}
+			],
+			"auth": null,
+			"folder": "a72cd04c-4d7b-57da-25b3-acb0d8fd3cfa",
+			"collection_id": "5c9baef6-d44b-74a1-0370-ed7a31dd29f3",
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

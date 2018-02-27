@@ -27,6 +27,17 @@ class historico
         $consulta->setFetchMode(PDO::FETCH_ASSOC);
         return $consulta->fetchAll();
     }
+
+    public static function traerTodosLogin()
+    {
+		$objetoAccesoDatos = AccesoDatos::dameUnObjetoAcceso(); 
+        $consulta = $objetoAccesoDatos->RetornarConsulta("SELECT id,idEmpleado,fecha,hora FROM historialEmpleado");
+        $consulta->execute();
+        $consulta->setFetchMode(PDO::FETCH_ASSOC);
+        $consulta->execute();
+        return $consulta->fetchAll();
+    }
+
     public static function loginUsuarioFechas($auxID,$desde,$hasta)
     {
         $objetoAccesoDatos = AccesoDatos::dameUnObjetoAcceso();

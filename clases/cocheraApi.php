@@ -16,9 +16,30 @@ class cocheraApi// extends empleado
         $cocheraAux = new cochera();
 
         $cocheraAux->piso = $piso;
+        if ($cocheraAux->piso== "" || !isset($cocheraAux->piso)) {
+            throw new Exception('Error: piso no puede esta vacio');
+        }
+        if (foto::validarNumero($cocheraAux->piso) == false) {
+            throw new Exception('Error: piso solo puede contener numeros');
+        }
+
         $cocheraAux->numero = $numero;
+        if ($cocheraAux->numero== "" || !isset($cocheraAux->numero)) {
+            throw new Exception('Error en Numero de cochera: numero no puede esta vacio');
+        }
+        if (foto::validarNumero($cocheraAux->numero) == false) {
+            throw new Exception('Error en Numero de cochera: solo puede contener numeros');
+        }
+
         $cocheraAux->estado = strtolower($estado);
+        if ($cocheraAux->estado != "ocupada" && $cocheraAux->estado != "libre"  || !isset($cocheraAux->estado)) {
+            throw new Exception('Error en estado de cochera: solo puede ser ocupada o libre');
+        }
+
         $cocheraAux->tipo = strtolower($tipo);
+        if ($cocheraAux->tipo != "especial" && $cocheraAux->tipo != "normal" || !isset($cocheraAux->tipo)) {
+            throw new Exception('Error en tipo de cochera: Solo puede ser normal o especial');
+        }
 
         $c = cochera::TraerCocheraNumero($cocheraAux->numero);
         if ($c == false) {
@@ -51,8 +72,14 @@ class cocheraApi// extends empleado
     public function BorrarUno($request, $response, $args) 
     {
             $ArrayDeParametros = $request->getParsedBody(); //para delete urlencoded
+            if (!isset($ArrayDeParametros['numero'])) {
+                throw new Exception('Error al borrar: Debe ingresar numero de cochera');
+            }
             $numero=$ArrayDeParametros['numero'];
             $cocheraBorrar = cochera::TraerCocheraNumero($numero);
+            if ($cocheraBorrar == false) {
+                throw new Exception('Error al borrar: No existe cochera con numero: '.$numero);
+            }
             $objDelaRespuesta= new stdclass();
             if ($cocheraBorrar != false) {
                 if(cochera::BorrarCocheraID($cocheraBorrar->id)>0)
@@ -74,6 +101,9 @@ class cocheraApi// extends empleado
     public function modificarUno($request, $response, $args) 
     {
             $ArrayDeParametros = $request->getParsedBody();
+            if (!isset($ArrayDeParametros['id'])) {
+                throw new Exception('Error al modificar: Debe ingresar ID de cochera');
+            }
             $id= $ArrayDeParametros['id'];
             $objDelaRespuesta= new stdclass();
             $cocheraModificar = cochera::TraerCocheraID($id);
@@ -83,24 +113,42 @@ class cocheraApi// extends empleado
                 if (isset($ArrayDeParametros['piso'])) {
                     $piso = $ArrayDeParametros['piso'];
                     $cocheraModificar->piso = $piso;
+                    if ($cocheraModificar->piso== "" || !isset($cocheraModificar->piso)) {
+                        throw new Exception('Error al modificar: piso no puede esta vacio');
+                    }
+                    if (foto::validarNumero($cocheraModificar->piso) == false) {
+                        throw new Exception('Error al modificar: piso solo puede contener numeros');
+                    }
                     $cocheraModificar->ModificarCochera($id);
                     $objDelaRespuesta->piso =$piso;
                 }
                 if (isset($ArrayDeParametros['numero'])) {
                     $numero = $ArrayDeParametros['numero'];
                     $cocheraModificar->numero = $numero;
+                    if ($cocheraModificar->numero== "" || !isset($cocheraModificar->numero)) {
+                        throw new Exception('Error al modificar Numero de cochera: no puede esta vacio');
+                    }
+                    if (foto::validarNumero($cocheraModificar->numero) == false) {
+                        throw new Exception('Error al modificar Numero de cochera: solo puede contener numeros');
+                    }
                     $cocheraModificar->ModificarCochera($id);
                     $objDelaRespuesta->numero =$numero;
                 }
                 if (isset($ArrayDeParametros['estado'])) {
                     $estado = strtolower($ArrayDeParametros['estado']);
                     $cocheraModificar->estado = $estado;
+                    if ($cocheraModificar->estado != "ocupada" && $cocheraModificar->estado != "libre"  || !isset($cocheraModificar->estado)) {
+                        throw new Exception('Error al modificar estado de cochera: solo puede ser ocupada o libre');
+                    }
                     $cocheraModificar->ModificarCochera($id);
                     $objDelaRespuesta->estado =$estado;
                 }
                 if (isset($ArrayDeParametros['tipo'])) {
                     $tipo = strtolower($ArrayDeParametros['tipo']);
                     $cocheraModificar->tipo = $tipo;
+                    if ($cocheraModificar->tipo != "especial" && $cocheraModificar->tipo != "normal" || !isset($cocheraModificar->tipo)) {
+                        throw new Exception('Error al modificar tipo de cochera: Solo puede ser normal o especial');
+                    }
                     $cocheraModificar->ModificarCochera($id);
                     $objDelaRespuesta->tipo =$tipo;
                 }
@@ -214,12 +262,22 @@ class cocheraApi// extends empleado
     {
         $ArrayDeParametros = $request->getParsedBody();
         $objDelaRespuesta= new stdclass();
-        $objDelaRespuesta->msj = "Cocheras Con mas ingresos y salidas";
+        //$objDelaRespuesta->msj = "Cocheras Con mas ingresos y salidas";
          
         if (isset($ArrayDeParametros['desde']) && isset($ArrayDeParametros['hasta'])) 
         {
             $desde= $ArrayDeParametros['desde'];
+            if ($desde== "") {
+                throw new Exception('Error: desde no puede esta vacio');
+            }
             $hasta= $ArrayDeParametros['hasta'];
+            if ($hasta== "") {
+                throw new Exception('Error: hasta no puede esta vacio');
+            }
+            if ($desde > $hasta) {
+                throw new Exception('Error: desde no puede ser mayor que hasta');
+            }
+            $objDelaRespuesta->msj ="Cocheras Con mas ingresos y salidas desde ".$desde." hasta ".$hasta;
             $cocheraMaxIngreso = cochera::TraerMasUtilizadaFechaIngreso($desde,$hasta);
             $cocheraMaxSalidas = cochera::TraerMasUtilizadaFechaSalida($desde,$hasta);
             $maximoIngreso = $cocheraMaxIngreso[0]['cant'];
@@ -227,6 +285,10 @@ class cocheraApi// extends empleado
         }
         if (isset($ArrayDeParametros['desde']) && !isset($ArrayDeParametros['hasta'])) {
             $desde= $ArrayDeParametros['desde'];
+            if ($desde== "") {
+                throw new Exception('Error: desde no puede esta vacio');
+            }
+            $objDelaRespuesta->msj ="Cocheras Con mas ingresos y salidas desde ".$desde." hasta hoy";
             $cocheraMaxIngreso = cochera::TraerMasUtilizadaFechaIngreso($desde,"");
             $cocheraMaxSalidas = cochera::TraerMasUtilizadaFechaSalida($desde,"");
             $maximoIngreso = $cocheraMaxIngreso[0]['cant'];
@@ -234,12 +296,17 @@ class cocheraApi// extends empleado
         }
         if (!isset($ArrayDeParametros['desde']) && isset($ArrayDeParametros['hasta'])) {
             $hasta= $ArrayDeParametros['hasta'];
+            if ($hasta== "") {
+                throw new Exception('Error: hasta no puede esta vacio');
+            }
+            $objDelaRespuesta->msj ="Cocheras Con mas ingresos y salidas desde el inicio de actividades hasta ".$hasta;
             $cocheraMaxIngreso = cochera::TraerMasUtilizadaFechaIngreso("",$hasta);
             $cocheraMaxSalidas = cochera::TraerMasUtilizadaFechaSalida("",$hasta);
             $maximoIngreso = $cocheraMaxIngreso[0]['cant'];
             $maximoSalida = $cocheraMaxSalidas[0]['cant'];
         }
         if (!isset($ArrayDeParametros['desde']) && !isset($ArrayDeParametros['hasta'])) {
+            $objDelaRespuesta->msj ="Cocheras Con mas ingresos y salidas en total desde el inicio de actividades hasta hoy";
             $cocheraMax = cochera::TraerMasUtilizada();
             $maximo = $cocheraMax[0]['cant'];
         
@@ -379,12 +446,22 @@ class cocheraApi// extends empleado
     {
         $ArrayDeParametros = $request->getParsedBody();
         $objDelaRespuesta= new stdclass();
-        $objDelaRespuesta->msj = "Cocheras con menos ingresos y salidas";
+        //$objDelaRespuesta->msj = "Cocheras con menos ingresos y salidas";
          
         if (isset($ArrayDeParametros['desde']) && isset($ArrayDeParametros['hasta'])) 
         {
             $desde= $ArrayDeParametros['desde'];
+            if ($desde== "") {
+                throw new Exception('Error: desde no puede esta vacio');
+            }
             $hasta= $ArrayDeParametros['hasta'];
+            if ($hasta== "") {
+                throw new Exception('Error: hasta no puede esta vacio');
+            }
+            if ($desde > $hasta) {
+                throw new Exception('Error: desde no puede ser mayor que hasta');
+            }
+            $objDelaRespuesta->msj ="Cocheras Con menos ingresos y salidas desde ".$desde." hasta ".$hasta;
             $cocheraMinIngreso = cochera::TraerMenosUtilizadaFechaIngreso($desde,$hasta);
             $cocheraMinSalidas = cochera::TraerMenosUtilizadaFechaSalida($desde,$hasta);
             $minimoIngreso = $cocheraMinIngreso[0]['cant'];
@@ -392,6 +469,10 @@ class cocheraApi// extends empleado
         }
         if (isset($ArrayDeParametros['desde']) && !isset($ArrayDeParametros['hasta'])) {
             $desde= $ArrayDeParametros['desde'];
+            if ($desde== "") {
+                throw new Exception('Error: desde no puede esta vacio');
+            }
+            $objDelaRespuesta->msj ="Cocheras con menos ingresos y salidas desde ".$desde." hasta hoy";
             $cocheraMinIngreso = cochera::TraerMenosUtilizadaFechaIngreso($desde,"");
             $cocheraMinSalidas = cochera::TraerMenosUtilizadaFechaSalida($desde,"");
             $minimoIngreso = $cocheraMinIngreso[0]['cant'];
@@ -399,6 +480,10 @@ class cocheraApi// extends empleado
         }
         if (!isset($ArrayDeParametros['desde']) && isset($ArrayDeParametros['hasta'])) {
             $hasta= $ArrayDeParametros['hasta'];
+            if ($hasta== "") {
+                throw new Exception('Error: hasta no puede esta vacio');
+            }
+            $objDelaRespuesta->msj ="Cocheras con menos ingresos y salidas desde el inicio de actividades hasta ".$hasta;
             $cocheraMinIngreso = cochera::TraerMenosUtilizadaFechaIngreso("",$hasta);
             $cocheraMinSalidas = cochera::TraerMenosUtilizadaFechaSalida("",$hasta);
             $minimoIngreso = $cocheraMinIngreso[0]['cant'];
@@ -406,6 +491,7 @@ class cocheraApi// extends empleado
         }
         if (!isset($ArrayDeParametros['desde']) && !isset($ArrayDeParametros['hasta'])) {
             $ahora= date("Y-m-d");
+            $objDelaRespuesta->msj ="Cocheras Con mas ingresos y salidas en total desde el inicio de actividades hasta hoy";
             $cocheraMinIngreso = cochera::TraerMenosUtilizadaFechaIngreso("",$ahora);
             $cocheraMinSalidas = cochera::TraerMenosUtilizadaFechaSalida("",$ahora);
             $minimoIngreso = $cocheraMinIngreso[0]['cant'];
@@ -451,26 +537,45 @@ class cocheraApi// extends empleado
     {
         $ArrayDeParametros = $request->getParsedBody();
         $objDelaRespuesta= new stdclass();
-        $objDelaRespuesta->msj = "Cocheras que nunca se usaron entre fechas";
+        //$objDelaRespuesta->msj = "Cocheras que nunca se usaron entre fechas";
          
         if (isset($ArrayDeParametros['desde']) && isset($ArrayDeParametros['hasta'])) 
         {
             $desde= $ArrayDeParametros['desde'];
+            if ($desde== "") {
+                throw new Exception('Error: desde no puede esta vacio');
+            }
             $hasta= $ArrayDeParametros['hasta'];
+            if ($hasta== "") {
+                throw new Exception('Error: hasta no puede esta vacio');
+            }
+            if ($desde > $hasta) {
+                throw new Exception('Error: desde no puede ser mayor que hasta');
+            }
+            $objDelaRespuesta->msj ="Cocheras que nunca se usaron desde ".$desde." hasta ".$hasta;
             $objDelaRespuesta->cochera = cochera::TraerNuncaUtilizada($desde,$hasta);
 
         }
         if (isset($ArrayDeParametros['desde']) && !isset($ArrayDeParametros['hasta'])) {
                 $desde= $ArrayDeParametros['desde'];
+                if ($desde== "") {
+                    throw new Exception('Error: desde no puede esta vacio');
+                }
+                $objDelaRespuesta->msj ="Cocheras que nunca se usaron desde ".$desde." hasta hoy";
                 $objDelaRespuesta->cochera = cochera::TraerNuncaUtilizada($desde,"");
 
         }
         if (!isset($ArrayDeParametros['desde']) && isset($ArrayDeParametros['hasta'])) {
-                $hasta= $ArrayDeParametros['hasta'];
+            $hasta= $ArrayDeParametros['hasta'];
+            if ($hasta== "") {
+                throw new Exception('Error: hasta no puede esta vacio');
+            }
+                $objDelaRespuesta->msj ="Cocheras que nunca se usaron desde el inicio de actividades hasta ".$hasta;
                 $objDelaRespuesta->cochera = cochera::TraerNuncaUtilizada("",$hasta);
 
         }
         if (!isset($ArrayDeParametros['desde']) && !isset($ArrayDeParametros['hasta'])) {
+            $objDelaRespuesta->msj ="Cocheras que nunca se usarondesde el inicio de actividades hasta hoy";
             $objDelaRespuesta->cochera = cochera::TraerNuncaUtilizada("","");
         }
 

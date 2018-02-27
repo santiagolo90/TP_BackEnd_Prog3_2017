@@ -53,7 +53,7 @@ class MWparaAutentificar
 				
 				if ($objDelaRespuesta->esValido) 
 				{
-					$payload=AutentificadorJWT::ObtenerData($token);
+					$payload= AutentificadorJWT::ObtenerData($token);
 			
 					if (strtolower($payload->perfil)=="admin") 
 					{
@@ -77,13 +77,11 @@ class MWparaAutentificar
 		if(!$request->isGet())
 		{
 			$objDelaRespuesta= new stdclass();
-			if(isset($request->getHeader('token')[0]))
-			{
+			if(isset($request->getHeader('token')[0])){
 					$arrayConToken = $request->getHeader('token');
 					$token=$arrayConToken[0];
 			} 
-			else 
-			{
+			else{
 					$objDelaRespuesta->acceso = "falta token.";
 					return $response->withJson($objDelaRespuesta, 403);
 			}
